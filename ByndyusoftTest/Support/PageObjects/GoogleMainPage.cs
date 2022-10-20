@@ -4,7 +4,7 @@
     {
         private const string PageUrl = "https://www.google.ru/";
         public IWebElement TextBoxSearch => _driver.FindElement(By.XPath("//input[@title='Поиск']"));
-        public IWebElement ButtonSearchInGoogle => _driver.FindElement(By.XPath("//input[@title='Поиск']"));
+        public IWebElement ButtonSearchInGoogle => _driver.FindElement(By.XPath("//div[@class='FPdoLc lJ9FBc']//input[@value='Поиск в Google']"));
 
         public GoogleMainPage() : base()
         {
