@@ -6,7 +6,7 @@
         public IWebElement TextBoxSearch => _driver.FindElement(By.XPath("//input[@title='Поиск']"));
         public IWebElement ButtonSearchInGoogle => _driver.FindElement(By.XPath("//input[@title='Поиск']"));
 
-        public GoogleMainPage(string driver) : base(driver)
+        public GoogleMainPage() : base()
         {
         }
 

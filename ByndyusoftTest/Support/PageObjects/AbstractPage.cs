@@ -4,9 +4,9 @@
     {
         protected IWebDriver _driver;
 
-        public AbstractPage(string driver)
+        public AbstractPage()
         {
-            _driver = Singleton.GetDriverInstance(driver);
+            _driver = Singleton.GetDriverInstance(Options.CurrentDriverName);
             _driver.Manage().Window.Maximize();
         }
     }

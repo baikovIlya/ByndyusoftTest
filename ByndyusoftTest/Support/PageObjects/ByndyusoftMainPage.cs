@@ -7,7 +7,7 @@
         public IWebElement LinkPhoneInPopUpWindow => _driver.FindElement(By.XPath("//div[@class='popup-callback__content']//a[@href='tel:88007751521']"));
         public IWebElement PopUpWindowOrderPresentation => _driver.FindElement(By.XPath("//div[contains(@class,'popup-callback js')]"));
 
-        public ByndyusoftMainPage(string driver) : base(driver)
+        public ByndyusoftMainPage() : base()
         {
         }
 
