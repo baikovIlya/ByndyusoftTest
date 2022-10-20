@@ -2,7 +2,7 @@
 {
     public class GoogleSearchPage : AbstractPage
     {
-        public IWebElement FirstSearchResult => _driver.FindElement(By.XPath("//h1[text()='Результаты поиска']/following-sibling::div/div[1]//link"));
+        public IWebElement FirstSearchResult => _driver.FindElements(By.XPath("//div[@class='MjjYud']//a")).FirstOrDefault();
 
         public GoogleSearchPage() : base()
         {
