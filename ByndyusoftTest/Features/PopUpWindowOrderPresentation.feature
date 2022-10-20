@@ -3,7 +3,7 @@
 @contacts
 Scenario: Add two numbers
 	Given Open Google web page
-	When Input "Byndysoft" in textbox search
+	When Input "Byndyusoft" in textbox search
 	And Click button Search In Google
 	And Click on first link
 	And Click on button OrderPresentation
