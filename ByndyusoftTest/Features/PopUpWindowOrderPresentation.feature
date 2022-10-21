@@ -1,5 +1,7 @@
 ﻿Feature: PopUpWindowOrderPresentation
 
+PopUp window with contacts, that appears after clicking on the button Order Presentation.
+
 @contacts
 Scenario: Add two numbers
 	Given Open Google web page
