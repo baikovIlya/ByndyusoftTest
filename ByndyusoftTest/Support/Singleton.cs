@@ -32,9 +32,9 @@
             return _driverInstance;
         }
 
-        public static void CloseChromeDriver()
+        public static void CloseDriver()
         {
-            _driverInstance.Close();
+            _driverInstance.Quit();
             _driverInstance = null;
         }
     }

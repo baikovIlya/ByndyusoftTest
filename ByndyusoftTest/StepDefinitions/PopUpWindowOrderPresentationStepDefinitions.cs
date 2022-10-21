@@ -29,6 +29,7 @@ namespace ByndyusoftTest.StepDefinitions
         {
             var page = new GoogleSearchPage();
             page.ClickFirstSearchResult();
+            page.SwitchToLastTab();
         }
 
         [When(@"Click on button OrderPresentation")]
