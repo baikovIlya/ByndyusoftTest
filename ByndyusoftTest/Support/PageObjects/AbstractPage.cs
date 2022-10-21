@@ -9,5 +9,10 @@
             _driver = Singleton.GetDriverInstance(Options.CurrentDriverName);
             _driver.Manage().Window.Maximize();
         }
+
+        public void SwitchToLastTab()
+        {
+            _driver.SwitchTo().Window(_driver.WindowHandles.Last());
+        }
     }
 }
